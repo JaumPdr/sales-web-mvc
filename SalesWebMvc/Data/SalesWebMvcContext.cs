@@ -7,9 +7,9 @@ using SalesWebMvc.Models;
 
 namespace SalesWebMvc
 {
-    public class ModelsSalesWebMvcContext : DbContext
+    public class SalesWebMvcContext : DbContext
     {
-        public ModelsSalesWebMvcContext (DbContextOptions<ModelsSalesWebMvcContext> options)
+        public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
             : base(options)
         {
         }
