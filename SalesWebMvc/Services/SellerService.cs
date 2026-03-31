@@ -51,7 +51,7 @@ namespace SalesWebMvc.Services
         public async Task UpdateAsync(Seller obj)
         {
             // Verifica se NÃO existe nenhum vendedor (Seller) no banco com o mesmo Id do objeto recebido (obj).
-            // O operador "!" inverte o resultado do Any():
+            // O operador "!" inverte o resultado do AnyAsync():
             // - true → quando NÃO encontra nenhum registro com esse Id
             // - false → quando já existe um vendedor com esse Id
             bool hasAny = await _context.Seller.AnyAsync(x => x.Id == obj.Id);
